@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Topics</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!-- font change -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- end of extra font -->
+
+</head>
+<body>
+	<!--header section start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                   
+                </div>
+                <div class="col-md-9">
+                    <div class="menu_text">
+                        <ul>
+                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="about.html">ABOUT US</a></li>
+                          <li><a href="topics.html">TOPICS</a></li>
+                          <li><a href="outputs.html">OUTPUTS</a></li>
+                          <li><a href="contact.html">CONTACT US</a></li>
+                            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="topics.html">TOPICS</a>
+                    <a href="outputs.html">OUTPUTS</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+                </div>
+                <span  style="font-size:33px;cursor:pointer; color: #ffffff;" onclick="openNav()"><img src="images/toggle.png" class="toggle_menu"></span>
+                </div>
+                </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+         
+    <!-- header section end -->
+
+        <div class="sidebar">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen">(1) Pure ALOHA</button>
+            <button class="tablinks" onclick="openCity(event, '2')">(2) Slotted ALOHA</button>
+            <button class="tablinks" onclick="openCity(event, '3')">(3) TCP/IP</button>
+            <button class="tablinks" onclick="openCity(event, '4')">(4) OSI Model</button>
+            <button class="tablinks" onclick="openCity(event, '5')">(5) Token Passing</button>
+            <button class="tablinks" onclick="openCity(event, '6')">(6) Encapsulation and Decapsulation</button>
+            <button class="tablinks" onclick="openCity(event, '7')">(7) Multiplexing and Demultiplexing</button>
+            <button class="tablinks" onclick="openCity(event, '8')">(8) Priciples of Protocol Layering</button>
+            <button class="tablinks" onclick="openCity(event, '9')">(9) Analog and Digital Data</button>
+            <button class="tablinks" onclick="openCity(event, '10')">(10) Topologies(Cisco Packet Tracer)</button>
+              
+          </div>
+        </div>
+        <div id="1" class="tabcontent">
+          <h2 class="about_text_2">Pure ALOHA</h2>
+            <p class = "client_long_text">In pure ALOHA, the time of transmission is continuous. Whenever a station has an available frame, it sends the frame.If there is collision and the frame is destroyed, the sender waits for a random amount of time before retransmitting it.<br><u>Working Principle:</u> After transmitting a frame, a station waits for a finite period of time to receive an acknowledgement.If the acknowledgement is not received within this time,the station assumes that the frame has been destroyed due to collision and resends the frame.A collision occurs if more than one frame tries to occupy the channel at the same time.</p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/PureAloha#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="2" class="tabcontent">
+          <h2 class="about_text_2">Slotted ALOHA</h2>
+            <p class = "client_long_text">Slotted ALOHA was introduced in 1972 by Robert as an improvement over pure ALOHA. Here, time is divided into discrete intervals called slots, corresponding to a frame.<br><u>Working Principle:</u> AThe communicating stations agree upon the slot boundaries. Any station can send only one frame at each slot. Also, the stations cannot transmit at any time whenever a frame is available. They should wait for the beginning of the next slot.However, there still can be collisions. If more than one frame transmits at the beginning of a slot, collisions occur. The collision duration is 1 slot. </p>
+            <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/SlottedAloha#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="3" class="tabcontent">
+          <h2 class="about_text_2">TCP/IP</h2>
+            <p class = "client_long_text">The TCP/IP model is a concise version of the OSI model.<br> It contains four layers, unlike seven layers in the OSI model. The layers are:<br>
+
+Process/Application Layer<br>
+Host-to-Host/Transport Layer<br>
+Internet Layer<br>
+Network Access/Link Layer<br>
+<br>
+TCP/IP follows a horizontal approach. Transport layer in TCP/IP does not provide assurance delivery of packets.<br>
+
+1. Network Access Layer –
+This layer corresponds to the combination of Data Link Layer and Physical Layer of the OSI model. It looks out for hardware addressing and the protocols present in this layer allows for the physical transmission of data.<br><br>
+
+2. Internet Layer –
+This layer parallels the functions of OSI’s Network layer. It defines the protocols which are responsible for logical transmission of data over the entire network. The main protocols residing at this layer are :<br>
+
+IP – stands for Internet Protocol and it is responsible for delivering packets from the source host to the destination host by looking at the IP addresses in the packet headers. IP has 2 versions:<br>
+IPv4 and IPv6. IPv4 is the one that most of the websites are using currently. But IPv6 is growing as the number of IPv4 addresses are limited in number when compared to the number of users.<br>
+ICMP – stands for Internet Control Message Protocol. It is encapsulated within IP datagrams and is responsible for providing hosts with information about network problems.<br>
+ARP – stands for Address Resolution Protocol. Its job is to find the hardware address of a host from a known IP address. ARP has several types: Reverse ARP, Proxy ARP, Gratuitous ARP and Inverse ARP.<br><br>
+
+3. Host-to-Host Layer –
+This layer is analogous to the transport layer of the OSI model. It is responsible for end-to-end communication and error-free delivery of data. It shields the upper-layer applications from the complexities of data.<br><br> </p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/TCPIP#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="4" class="tabcontent">
+          <h2 class="about_text_2">OSI Model</h2>
+            <p class = "client_long_text">OSI stands for Open Systems Interconnection. It has been developed by ISO – ‘International Organization of Standardization‘, in the year 1984. It is a 7 layer architecture with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe.<br><br>
+            1. <u>Physical Layer (Layer 1): </u>
+The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices.
+<br><br>
+2. Data Link Layer (DLL) (Layer 2) :
+The data link layer is responsible for the node to node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address.</p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/OSI-Model#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="5" class="tabcontent">
+          <h2 class="about_text_2">Token Passing</h2>
+          <p class = "client_long_text">A communications network access method that uses a continuously repeating frame (the token) that is transmitted onto the network by the controlling computer. When a terminal or computer wants to send a message, it waits for an empty token that it fills with the address of the destination station and some or all of its message.<br>Every node on the network constantly monitors the passing tokens to determine if it is a recipient of a message, in which case it "grabs" the message and resets the token status to empty. Token passing uses bus and ring topologies.<br><br> </p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/TokenPassing#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="6" class="tabcontent">
+           <h2 class="about_text_2">Encapsulation and Decapsulation</h2>
+          <p class = "client_long_text">In a computer network, data communication occurs through layers of architecture (OSI or TCP/IP). In these models, Data goes through the layers by layer. Data encapsulation is required when we send the data from a source computer to the destination computer. The reverse process of encapsulation (or decapsulation) occurs when data is received on the destination computer(incoming transmission). Data Encapsulation and Decapsulation at sending and receiving end respectively. </p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/Encapsulation#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="7" class="tabcontent">
+          <h2 class="about_text_2">Multiplexing and Demultiplexing</h2>
+          <p class = "client_long_text">Multiplexing and Demultiplexing services are provided in almost every protocol architecture ever designed. UDP and TCP perform the demultiplexing and multiplexing jobs by including two special fields in the segment headers: the source port number field and the destination port number field.<br>
+
+<u>Multiplexing –</u>
+Gathering data from multiple application processes of sender, enveloping that data with header and sending them as a whole to the intended receiver is called as multiplexing.<br>
+
+<u>Demultiplexing –</u>
+Delivering received segments at receiver side to the correct app layer processes is called as demultiplexing.<br><br> </p>
+ <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/MuxDeMux#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        
+        <div id="8" class="tabcontent">
+          <h2 class = "about_text_2">Protocol Layering</h2>
+<pre class = "client_long_text">A protocol protocol is a set of rules and formats that govern the is a set of rules and formats that govern the
+communication between communicating peers communication between communicating peers.
+◆ set of valid messages set of valid messages
+◆ meaning of each message meaning of each message
+■ A protocol is necessary for any function that requires A protocol is necessary for any function that requires
+cooperation between peers cooperation between peers
+<br>
+What does a protocol tell us?
+■ Syntax of a message of a message
+■ Semantics of a message
+■ Actions to take on receipt of a message
+◆ for example, on receiving not-OK message, retransmit the entire file
+<br>
+Protocol layering
+■ A network that provides many services needs many protocols.
+■ Protocol A may use protocol B as a step in its execution.
+■ This form of dependency is called layering
+</pre>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/TCPIP#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="9" class="tabcontent">
+          <h2 class = "about_text_2">Analog and Digital Data</h2>
+          <p class = "client_long_text">Analog and digital signals are the types of signals carrying information. The major difference between both signals is that the analog signals have continuous electrical signals, while digital signals have non-continuous electrical signals. <br>
+<u>Analog Signals</u>
+The analog signals were used in many systems to produce signals to carry information.  These signals are continuous in both values and time. The use of analog signals has been declined with the arrival of digital signals. In short, to understand the analog signals –  all signals that are natural or come naturally are analog signals.<br>
+
+<u>Digital Signals</u>
+Unlike analog signals, digital signals are not continuous, but signals are discrete in value and time. These signals are represented by binary numbers and consist of different voltage values.<br></p>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://replit.com/@SaachiKaup/AnalogDigital#main.c" >Try Me</a>
+    </div>
+        </div>
+        
+        <div id="10" class="tabcontent">
+          <h2 class = "about_text_2">Topologies(CPT)</h2>
+          <p class = "client_long_text">Types of Topology<br>
+There are five types of topology in computer networks:<br>
+<u>1. Mesh Topology: </u>In mesh topology each device is connected to every other device on the network through a dedicated point-to-point link. When we say dedicated it means that the link only carries data for the two connected devices only.<br>
+<u>2. Star Topology: </u> In star topology each device in the network is connected to a central device called hub. Unlike Mesh topology, star topology doesn’t allow direct communication between devices, a device must have to communicate through hub. If one device wants to send data to other device, it has to first send the data to hub and then the hub transmit that data to the designated device.<br>
+<u>3. Bus Topology: </u>In bus topology there is a main cable and all the devices are connected to this main cable through drop lines. There is a device called tap that connects the drop line to the main cable. Since all the data is transmitted over the main cable, there is a limit of drop lines and the distance a main cable can have.<br>
+<u>4. Ring Topology: </u>In ring topology each device is connected with the two devices on either side of it. There are two dedicated point to point links a device has with the devices on the either side of it. This structure forms a ring thus it is known as ring topology. If a device wants to send data to another device then it sends the data in one direction, each device in ring topology has a repeater, if the received data is intended for other device then repeater forwards this data until the intended device receives it.<br>
+<u>5. Hybrid Topology: </u>A combination of two or more topology is known as hybrid topology. For example a combination of star and mesh topology is known as hybrid topology.<br></p>
+<img src = images\MANattempt3.png>
+          <div class="btn" align = centre position = relative>
+<a class="btn btn-secondary btn-lg" type="button" id="tryMeButton" aria-haspopup="true" aria-expanded="true" href = "https://photos.google.com/share/AF1QipPxuQoKwoRZzyraJuaYVJkPtZ_NWm7WTwBE1hVQVeVW5J0KWznyG0y-NtNukYCkfQ/photo/AF1QipPGeCVGKWChv2GXrIUI3PkAVu5ZdTipgDUV_ZAt?key=QWtJdkp5MU9menB1aXYxVmFxSk5IOERQcW9Id3NB" >Try Me</a>
+    </div>
+        </div>
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="footer_section_2">
+          <div class="container">
+            <div class="row map_addres">
+              <div class="col-sm-12 col-lg-4">
+                <div class="map_text"><img src="images/map-icon.png"><span class="map_icon">Bhakti Vedant Swami Marg,
+Near Cooper Hospital, JVPD Scheme,
+Vile Parle (West), Mumbai.</span></div>
+              </div>
+                    <div class="col-sm-12 col-lg-4">
+                      <div class="map_text"><img src="images/phone-icon.png"><span class="map_icon">( +91 22 4233 4000 )</span></div>
+                    </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="map_text"><img src="images/email-icon.png"><span class="map_icon">enquiry.mpstme@nmims.edu</span></div>
+              </div>
+            </div>
+            <div class="social_icon">
+              <ul>
+                <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                <li><a href="#"><img src="images/in-icon.png"></a></li>
+                <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+              </ul>
+            </div>
+            <p class="copyright_text">@Copyright 2021</p>
+          </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript -->
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+      $(document).ready(function(){
+      $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         </script>
+
+
+   <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+   }
+</script>
+
+
+
+     
+</body>
+</html>
